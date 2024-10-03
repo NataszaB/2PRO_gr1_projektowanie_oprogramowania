@@ -4,10 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        let num = document.getElementById("h1");   
+        function licznik(){
+           num++
+           document.getElementById("h1").innerHTML = num;
+        }
+       </script>
 </head>
 <body>
     
-    <h1>edited</h1>
-    <h1>trzeci</h1>
+    <h1 id="h1">1</h1>
+    <button onclick="licznik()">+1</button>
+    
 </body>
 </html>
