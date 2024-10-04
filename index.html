@@ -6,16 +6,21 @@
     <title>Document</title>
     <script>
         let num = document.getElementById("h1");   
-        function licznik(){
+        function licznikgora(){
            num++
            document.getElementById("h1").innerHTML = num;
+        }
+        function licznikdol(){
+            num--
+            document.getElementById("h1").innerHTML =num;
         }
        </script>
 </head>
 <body>
     
     <h1 id="h1">1</h1>
-    <button onclick="licznik()">+1</button>
+    <button onclick="licznikgora()">+1</button>
+    <button onclick="licznikdol()">-1</button>
     
 </body>
 </html>
